@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Lekas Takzim Sdn. Bhd. — Infrastructure development specialist in roads, bridges, utilities and concession projects across Malaysia.">
+
+  <title>Lekas Takzim Sdn. Bhd.</title>
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts: Inter (body) + Barlow Condensed (display) -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+
+      <!-- Brand -->
+      <button class="nav__brand" data-section="home" aria-label="Lekas Takzim home">
+        <svg class="nav__logo" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <!-- CLT emblem approximating the Lekas Takzim logo -->
+          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.25"/>
+          <!-- C arc -->
+          <path d="M28 10 A13 13 0 1 0 28 30" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <!-- L -->
+          <path d="M18 13 L18 22 L23 22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- T -->
+          <path d="M25 13 L31 13 M28 13 L28 22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <span class="nav__company-name">Lekas Takzim</span>
+          <span class="nav__company-reg">Sdn. Bhd. &nbsp;(389258-W)</span>
+        </div>
+      </button>
+
+      <!-- Desktop links -->
+      <ul class="nav__links" role="list">
+        <li><button class="nav__link nav__link--active" data-section="home" aria-current="page">Home</button></li>
+        <li><button class="nav__link" data-section="about">About</button></li>
+        <li><button class="nav__link" data-section="services">Services</button></li>
+        <li><button class="nav__link" data-section="projects">Projects</button></li>
+        <li><button class="nav__link" data-section="team">Team</button></li>
+        <li><button class="nav__link" data-section="contact">Contact</button></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div class="nav__mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+    <button class="nav__mobile-link" data-section="home"     data-mobile>Home</button>
+    <button class="nav__mobile-link" data-section="about"    data-mobile>About</button>
+    <button class="nav__mobile-link" data-section="services" data-mobile>Services</button>
+    <button class="nav__mobile-link" data-section="projects" data-mobile>Projects</button>
+    <button class="nav__mobile-link" data-section="team"     data-mobile>Team</button>
+    <button class="nav__mobile-link" data-section="contact"  data-mobile>Contact</button>
+  </div>
+
+  <!-- ===== DYNAMIC CONTENT HOST ===== -->
+  <main id="content" role="main" aria-live="polite" aria-atomic="true">
+    <!-- Sections fetched and injected here by main.js -->
+  </main>
+
+  <!-- ===== FOOTER (persistent) ===== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer__inner">
+
+      <div class="footer__brand">
+        <div class="footer__brand-name">Lekas Takzim Sdn. Bhd.</div>
+        <div class="footer__brand-reg">(389258-W)</div>
+      </div>
+
+      <p class="footer__copy">
+        &copy; <span id="footer-year"></span> Lekas Takzim Sdn. Bhd. All rights reserved.
+      </p>
+
+      <nav class="footer__links" aria-label="Footer navigation">
+        <button class="footer__link" data-section="about">About</button>
+        <button class="footer__link" data-section="services">Services</button>
+        <button class="footer__link" data-section="team">Team</button>
+        <button class="footer__link" data-section="contact">Contact</button>
+      </nav>
+
+    </div>
+  </footer>
+
+  <!-- Main script -->
+  <script src="js/main.js"></script>
+</body>
+</html>

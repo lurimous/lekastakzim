@@ -8,6 +8,9 @@
 
   <title>Lekas Takzim Sdn. Bhd.</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
   <!-- Preconnect for Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,12 +30,7 @@
 
       <!-- Brand -->
       <button class="nav__brand" data-section="home" aria-label="Lekas Takzim home">
-        <svg class="nav__logo" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <rect width="40" height="40" rx="2" fill="currentColor" opacity="0.1"/>
-          <path d="M8 32 L8 12 L20 8 L32 12 L32 32" stroke="currentColor" stroke-width="2" stroke-linejoin="round" fill="none"/>
-          <path d="M16 32 L16 22 L24 22 L24 32" stroke="currentColor" stroke-width="1.5" fill="none"/>
-          <path d="M8 18 L32 18" stroke="currentColor" stroke-width="1.5"/>
-        </svg>
+        <img class="nav__logo" src="assets/logo.png" alt="Lekas Takzim logo" aria-hidden="true">
         <div>
           <span class="nav__company-name">Lekas Takzim</span>
           <span class="nav__company-reg">Sdn. Bhd. &nbsp;(389258-W)</span>
@@ -45,6 +43,7 @@
         <li><button class="nav__link" data-section="about">About</button></li>
         <li><button class="nav__link" data-section="services">Services</button></li>
         <li><button class="nav__link" data-section="projects">Projects</button></li>
+        <li><button class="nav__link" data-section="team">Team</button></li>
         <li><button class="nav__link" data-section="contact">Contact</button></li>
       </ul>
 
@@ -64,6 +63,7 @@
     <button class="nav__mobile-link" data-section="about"    data-mobile>About</button>
     <button class="nav__mobile-link" data-section="services" data-mobile>Services</button>
     <button class="nav__mobile-link" data-section="projects" data-mobile>Projects</button>
+    <button class="nav__mobile-link" data-section="team"     data-mobile>Team</button>
     <button class="nav__mobile-link" data-section="contact"  data-mobile>Contact</button>
   </div>
 
@@ -88,6 +88,7 @@
       <nav class="footer__links" aria-label="Footer navigation">
         <button class="footer__link" data-section="about">About</button>
         <button class="footer__link" data-section="services">Services</button>
+        <button class="footer__link" data-section="team">Team</button>
         <button class="footer__link" data-section="contact">Contact</button>
       </nav>
 

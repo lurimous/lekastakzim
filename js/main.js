@@ -263,6 +263,8 @@
   /* ═══════════════════════════════════════════════════════════
      CONTACT FORM
   ═══════════════════════════════════════════════════════════ */
+  var CONTACT_EMAIL = 'admin@lekastakzim.asia';
+
   function initContactForm() {
     var form      = document.getElementById('contactForm');
     var btnSubmit = document.getElementById('submitBtn');
@@ -282,45 +284,35 @@
         return;
       }
 
-      btnSubmit.disabled = true;
-      btnSubmit.textContent = 'Sending\u2026';
+      var name    = (document.getElementById('field-name')    || {}).value || '';
+      var email   = (document.getElementById('field-email')   || {}).value || '';
+      var phone   = (document.getElementById('field-phone')   || {}).value || '';
+      var company = (document.getElementById('field-company') || {}).value || '';
+      var message = (document.getElementById('field-message') || {}).value || '';
 
-      var action = form.getAttribute('action') || '#';
+      var subject = 'Enquiry' + (name ? ' from ' + name : '') + (company ? ' (' + company + ')' : '');
 
-      // Placeholder — no real backend configured
-      if (action === '#') {
-        setTimeout(function () {
-          formSuccess(form, btnSubmit, elSuccess);
-        }, 900);
-        return;
-      }
+      var body = [
+        'Name: '    + name,
+        'Email: '   + email,
+        'Phone: '   + (phone   || '—'),
+        'Company: ' + (company || '—'),
+        '',
+        message,
+      ].join('\n');
 
-      fetch(action, {
-        method:  'POST',
-        body:    new FormData(form),
-        headers: { 'Accept': 'application/json' },
-      })
-        .then(function (res) {
-          if (res.ok) {
-            formSuccess(form, btnSubmit, elSuccess);
-          } else {
-            throw new Error('Status ' + res.status);
-          }
-        })
-        .catch(function (err) {
-          console.error('[LT] Form error:', err);
-          elError.classList.add('is-visible');
-          btnSubmit.disabled = false;
-          btnSubmit.textContent = 'Send Message';
-        });
+      var mailto = 'mailto:' + CONTACT_EMAIL
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body='    + encodeURIComponent(body);
+
+      window.location.href = mailto;
+
+      // Show confirmation and reset after a brief delay
+      setTimeout(function () {
+        form.reset();
+        elSuccess.classList.add('is-visible');
+      }, 400);
     });
-  }
-
-  function formSuccess(form, btn, elSuccess) {
-    form.reset();
-    elSuccess.classList.add('is-visible');
-    btn.disabled = false;
-    btn.textContent = 'Send Message';
   }
 
   /* ═══════════════════════════════════════════════════════════
