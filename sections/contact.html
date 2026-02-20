@@ -1,0 +1,130 @@
+<!-- ===== CONTACT ===== -->
+<section class="section contact" aria-labelledby="contact-title">
+  <div class="container">
+
+    <div class="contact__grid">
+
+      <!-- ── Info column ── -->
+      <div>
+
+        <div class="section-header reveal">
+          <span class="overline">Get in Touch</span>
+          <h1 class="section-header__title" id="contact-title">
+            Start a Conversation
+          </h1>
+          <p class="section-header__body">
+            Whether you have a project enquiry, a partnership proposal,
+            or simply want to learn more about what we do — we would
+            love to hear from you.
+          </p>
+        </div>
+
+        <div class="contact__details reveal">
+
+          <div>
+            <p class="contact__detail-label">Company</p>
+            <p class="contact__detail-value">Lekas Takzim Sdn. Bhd. (389258-W)</p>
+          </div>
+
+          <div>
+            <p class="contact__detail-label">Email</p>
+            <p class="contact__detail-value">
+              <a href="mailto:admin@lekastakzim.co"
+                 style="color: var(--color-text-muted); transition: color var(--dur-normal);"
+                 onmouseover="this.style.color='var(--color-accent)'"
+                 onmouseout="this.style.color='var(--color-text-muted)'">
+                admin@lekastakzim.co
+              </a>
+            </p>
+          </div>
+
+          <div>
+            <p class="contact__detail-label">Location</p>
+            <p class="contact__detail-value">Malaysia</p>
+          </div>
+
+          <div>
+            <p class="contact__detail-label">Business Hours</p>
+            <p class="contact__detail-value">Monday – Friday, 9:00am – 6:00pm MYT</p>
+          </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div style="margin-top: var(--space-12); padding-top: var(--space-8); border-top: var(--border-1);" class="reveal">
+          <p style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: var(--tracking-widest); color: var(--color-text-subtle); margin-bottom: var(--space-6);">Also Explore</p>
+          <div class="flex gap-4" style="flex-wrap: wrap;">
+            <button class="btn btn--ghost" data-section="services" style="padding: var(--space-3) var(--space-6);">Our Services</button>
+            <button class="btn btn--ghost" data-section="projects" style="padding: var(--space-3) var(--space-6);">Our Projects</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── Form column ── -->
+      <div class="reveal">
+
+        <form class="contact__form" id="contactForm" action="#" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="field-name">Full Name</label>
+              <input class="form-input" type="text" id="field-name"
+                     name="name" required
+                     placeholder="Ahmad bin Ibrahim"
+                     autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="field-email">Email Address</label>
+              <input class="form-input" type="email" id="field-email"
+                     name="email" required
+                     placeholder="ahmad@company.com.my"
+                     autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="field-phone">Phone Number</label>
+            <input class="form-input" type="tel" id="field-phone"
+                   name="phone"
+                   placeholder="+60 12-345 6789"
+                   autocomplete="tel">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="field-company">Company / Organisation</label>
+            <input class="form-input" type="text" id="field-company"
+                   name="company"
+                   placeholder="Your company name"
+                   autocomplete="organization">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="field-message">Message</label>
+            <textarea class="form-textarea" id="field-message"
+                      name="message" required
+                      placeholder="Tell us about your project or enquiry…"></textarea>
+          </div>
+
+          <!-- Status messages -->
+          <div class="form-status form-status--success" id="formSuccess" role="alert">
+            Thank you for reaching out. We will be in touch shortly.
+          </div>
+          <div class="form-status form-status--error" id="formError" role="alert">
+            Something went wrong. Please try again or email us directly.
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn--primary" id="submitBtn">
+              Send Message
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>

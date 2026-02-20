@@ -1,0 +1,173 @@
+<!-- ===== HERO ===== -->
+<section class="hero" aria-label="Hero">
+
+  <!-- Background — replace assets/hero-bg.jpg with a real site photo -->
+  <div class="hero__bg">
+    <!-- <img src="assets/hero-bg.jpg" alt="" role="presentation" fetchpriority="high"> -->
+  </div>
+
+  <!-- Vignette -->
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <!-- Content -->
+  <div class="hero__content">
+
+    <p class="hero__tag">Infrastructure Development Specialist</p>
+
+    <h1 class="hero__headline">
+      Building<br>
+      <span class="accent-word">Malaysia's</span><br>
+      Future
+    </h1>
+
+    <p class="hero__sub">
+      Roads, bridges, utilities, and concession projects delivered
+      with precision, integrity, and an unwavering commitment to time.
+    </p>
+
+    <div class="hero__cta-row">
+      <button class="btn btn--primary" data-section="services">Our Services</button>
+      <button class="btn btn--ghost"   data-section="contact">Get in Touch</button>
+    </div>
+
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="hero__scroll" aria-hidden="true">
+    <span class="hero__scroll-line"></span>
+    <span>Scroll</span>
+  </div>
+
+</section>
+
+<!-- ===== STATS BAR ===== -->
+<section aria-label="Company highlights" style="padding-block: var(--space-16);">
+  <div class="container">
+    <div class="stats-bar reveal-stagger">
+
+      <div style="--reveal-delay: 0ms">
+        <div class="stat-item__number">20+</div>
+        <div class="stat-item__label">Years of Experience</div>
+      </div>
+
+      <div style="--reveal-delay: 100ms">
+        <div class="stat-item__number">50+</div>
+        <div class="stat-item__label">Projects Completed</div>
+      </div>
+
+      <div style="--reveal-delay: 200ms">
+        <div class="stat-item__number">3</div>
+        <div class="stat-item__label">Core Disciplines</div>
+      </div>
+
+      <div style="--reveal-delay: 300ms">
+        <div class="stat-item__number">100%</div>
+        <div class="stat-item__label">Client Commitment</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOME ABOUT PREVIEW ===== -->
+<section class="section" style="background-color: var(--color-surface); border-top: var(--border-1);"
+         aria-labelledby="home-about-title">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: center;">
+
+      <div class="reveal">
+        <span class="overline">Who We Are</span>
+        <h2 class="display-2" id="home-about-title" style="max-width: 14ch; margin-bottom: var(--space-6);">
+          Infrastructure Built on Expertise
+        </h2>
+        <p style="color: var(--color-text-muted); font-size: var(--text-lg); line-height: var(--leading-loose); max-width: 52ch; margin-bottom: var(--space-10);">
+          Lekas Takzim Sdn. Bhd. is a distinguished infrastructure development company
+          known for its commitment to excellence, timely delivery, and trusted partnerships
+          across roads, bridges, utilities, and concession projects.
+        </p>
+        <button class="btn btn--ghost" data-section="about">Learn More</button>
+      </div>
+
+      <div class="reveal-stagger" style="display: flex; flex-direction: column; gap: var(--space-6);">
+
+        <div style="--reveal-delay: 0ms; padding: var(--space-6); background: var(--color-surface-2); border: var(--border-1); border-radius: var(--radius-md);">
+          <div class="overline" style="margin-bottom: var(--space-2);">Expertise</div>
+          <p style="color: var(--color-text-muted); font-size: var(--text-sm); line-height: var(--leading-loose);">
+            Roads, bridges, utilities, architectural design, reconstruction, and electrical systems.
+          </p>
+        </div>
+
+        <div style="--reveal-delay: 120ms; padding: var(--space-6); background: var(--color-surface-2); border: var(--border-1); border-radius: var(--radius-md);">
+          <div class="overline" style="margin-bottom: var(--space-2);">Management</div>
+          <p style="color: var(--color-text-muted); font-size: var(--text-sm); line-height: var(--leading-loose);">
+            Industry veterans with deep experience in project governance, risk assessment, and delivery.
+          </p>
+        </div>
+
+        <div style="--reveal-delay: 240ms; padding: var(--space-6); background: var(--color-surface-2); border: var(--border-1); border-radius: var(--radius-md);">
+          <div class="overline" style="margin-bottom: var(--space-2);">Compliance</div>
+          <p style="color: var(--color-text-muted); font-size: var(--text-sm); line-height: var(--leading-loose);">
+            SSM registered (389258-W). Transparent practices with full regulatory adherence.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOME SERVICES PREVIEW ===== -->
+<section class="section" aria-labelledby="home-services-title">
+  <div class="container">
+
+    <div class="reveal" style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: var(--space-12); gap: var(--space-8); flex-wrap: wrap;">
+      <div>
+        <span class="overline">What We Do</span>
+        <h2 class="display-2" id="home-services-title" style="max-width: 16ch;">Our Core Services</h2>
+      </div>
+      <button class="btn btn--ghost" data-section="services">View All Services</button>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background-color: var(--color-border); border: 1px solid var(--color-border); overflow: hidden;" class="reveal-stagger">
+
+      <div style="--reveal-delay: 0ms; background: var(--color-surface); padding: var(--space-8); position: relative; overflow: hidden;">
+        <div style="position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--color-accent); transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);" class="card-line"></div>
+        <p class="service-card__num">01</p>
+        <p class="service-card__title">Architectural Design</p>
+        <p class="service-card__body">Comprehensive planning and design for infrastructure projects built to last.</p>
+      </div>
+
+      <div style="--reveal-delay: 100ms; background: var(--color-surface); padding: var(--space-8); position: relative; overflow: hidden;">
+        <div style="position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--color-accent); transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);" class="card-line"></div>
+        <p class="service-card__num">02</p>
+        <p class="service-card__title">Reconstruction</p>
+        <p class="service-card__body">Rehabilitation of existing infrastructure to modern standards, minimal disruption.</p>
+      </div>
+
+      <div style="--reveal-delay: 200ms; background: var(--color-surface); padding: var(--space-8); position: relative; overflow: hidden;">
+        <div style="position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--color-accent); transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);" class="card-line"></div>
+        <p class="service-card__num">03</p>
+        <p class="service-card__title">Electrical Systems</p>
+        <p class="service-card__body">Full-scope electrical design, installation, and commissioning to TNB specifications.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section style="background: var(--color-surface); border-top: var(--border-1); border-bottom: var(--border-1); padding-block: var(--space-20);" aria-label="Call to action">
+  <div class="container">
+    <div class="reveal" style="text-align: center;">
+      <span class="overline" style="justify-content: center; display: flex; align-items: center;">Start a Project</span>
+      <h2 class="display-2" style="max-width: none; margin-bottom: var(--space-6);">Have a Project in Mind?</h2>
+      <p style="color: var(--color-text-muted); font-size: var(--text-lg); line-height: var(--leading-loose); max-width: 52ch; margin-inline: auto; margin-bottom: var(--space-10);">
+        We work with government agencies, concession holders, and private developers
+        to deliver infrastructure that endures.
+      </p>
+      <button class="btn btn--primary" data-section="contact">Get in Touch</button>
+    </div>
+  </div>
+</section>
